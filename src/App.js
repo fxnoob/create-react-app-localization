@@ -1,13 +1,21 @@
-import logo from './logo.svg';
+import logoSrc from './logo.svg';
 import './App.css';
+import { useLanguage } from "./contexts/LanguageContext";
 
 function App() {
+  const { t } = useLanguage();
+  const logo = t("logo"); // logo
+  const edit = t("edit"); // edit
+  const and = t("and"); // and
+  const saveToReload = t("saveToReload"); //  save to reload
+  const learnReact = t("learnReact"); //  Learn React
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logoSrc} className="App-logo" alt={logo} />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {edit} <code>src/App.js</code> {and} {saveToReload}.
         </p>
         <a
           className="App-link"
@@ -15,7 +23,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          {learnReact}
         </a>
       </header>
     </div>

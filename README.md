@@ -1,4 +1,93 @@
-# Getting Started with Create React App
+# Create React App localization 
+
+> Load app in a regional languages without loading all the translation files.
+
+> Easy to use Context Api.
+
+> Cli scripts to generate and delete translations files.
+
+## Commands
+
+### Generate locale
+
+````
+yarn generate:locale
+
+````
+
+### Delete locale 
+
+````
+yarn delete:locale
+
+````
+
+## How to use translations
+
+App catches `hl` get query parameter from the url. if not found it fallbacks to browser locale otherwise default locale is set to `en`(English).
+
+In `index.js` app is wrapped in `LanguageProvider` context.
+
+````
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import { LanguageProvider } from "./contexts/LanguageContext";
+
+ReactDOM.render(
+  <React.StrictMode>
+      <LanguageProvider>
+        <App />
+      </LanguageProvider>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+````
+
+Now you can use `useLanguage` context api in the children component. it contains `t` function which takes `key` as parameter and return translated text based upon the locale.
+
+
+`App.js`
+
+````
+import logoSrc from './logo.svg';
+import './App.css';
+import { useLanguage } from "./contexts/LanguageContext";
+
+function App() {
+  const { t } = useLanguage();
+  const logo = t("logo"); // logo
+  const edit = t("edit"); // edit
+  const and = t("and"); // and
+  const saveToReload = t("saveToReload"); //  save to reload
+  const learnReact = t("learnReact"); //  Learn React
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logoSrc} className="App-logo" alt={logo} />
+        <p>
+          {edit} <code>src/App.js</code> {and} {saveToReload}.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {learnReact}
+        </a>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+````
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
