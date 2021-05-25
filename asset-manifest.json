@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/static/js/main.94850cba.chunk.js",
-    "main.js.map": "/static/js/main.94850cba.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e271816b.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e271816b.js.map",
-    "static/js/2.d799ccf6.chunk.js": "/static/js/2.d799ccf6.chunk.js",
-    "static/js/2.d799ccf6.chunk.js.map": "/static/js/2.d799ccf6.chunk.js.map",
-    "static/js/3.4af981b5.chunk.js": "/static/js/3.4af981b5.chunk.js",
-    "static/js/3.4af981b5.chunk.js.map": "/static/js/3.4af981b5.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.d799ccf6.chunk.js.LICENSE.txt": "/static/js/2.d799ccf6.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg"
+    "main.css": "/create-react-app-localization/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/create-react-app-localization/static/js/main.94850cba.chunk.js",
+    "main.js.map": "/create-react-app-localization/static/js/main.94850cba.chunk.js.map",
+    "runtime-main.js": "/create-react-app-localization/static/js/runtime-main.5463f2a6.js",
+    "runtime-main.js.map": "/create-react-app-localization/static/js/runtime-main.5463f2a6.js.map",
+    "static/js/2.d799ccf6.chunk.js": "/create-react-app-localization/static/js/2.d799ccf6.chunk.js",
+    "static/js/2.d799ccf6.chunk.js.map": "/create-react-app-localization/static/js/2.d799ccf6.chunk.js.map",
+    "static/js/3.4af981b5.chunk.js": "/create-react-app-localization/static/js/3.4af981b5.chunk.js",
+    "static/js/3.4af981b5.chunk.js.map": "/create-react-app-localization/static/js/3.4af981b5.chunk.js.map",
+    "index.html": "/create-react-app-localization/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/create-react-app-localization/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.d799ccf6.chunk.js.LICENSE.txt": "/create-react-app-localization/static/js/2.d799ccf6.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/create-react-app-localization/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e271816b.js",
+    "static/js/runtime-main.5463f2a6.js",
     "static/js/2.d799ccf6.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
     "static/js/main.94850cba.chunk.js"
