@@ -23,7 +23,7 @@ export function LanguageProvider({ children }) {
   useEffect(() => {
     const init = async () => {
       try {
-        const data = await fetch(`/_locales/${hl}/messages.json`);
+        const data = await fetch(`https://raw.githubusercontent.com/fxnoob/create-react-app-localization/master/public/_locales/${hl}/messages.json`);
         localeData = await data.json();
       } catch (e) {
         localeData = enLocale;

@@ -6,6 +6,27 @@
 
 > Cli scripts to generate and delete translations files.
 
+## Demo 
+
+Try 
+
+Chinese version
+
+https://fxnoob.github.io/create-react-app-localization/?hl=zh
+
+Hindi version
+
+https://fxnoob.github.io/create-react-app-localization/?hl=hi
+
+Spanish version
+
+https://fxnoob.github.io/create-react-app-localization/?hl=es
+
+### Available locales value
+
+ar,am,bg,bn,ca,cs,da,de,el,en,es,et,fa,fi,fil,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,lt,lv,ml,mr,ms,nl,no,pl,pt,ro,ru,sk,sl,sr,sv,sw,ta,te,th,tr,uk,vi,zh
+
+
 ## Commands
 
 ### Generate locale

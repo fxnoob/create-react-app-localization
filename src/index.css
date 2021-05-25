@@ -11,3 +11,49 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#spinner-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 10;
+}
+
+#spinner-1:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 80px;
+  width: 80px;
+  margin-top: -40px;
+  margin-left: -40px;
+  border-radius: 50%;
+  border: 8px solid #f7f7f7;
+  border-top-color: #fa8bff;
+  background-color: #fa8bff;
+  background-image: linear-gradient(
+          45deg,
+          #fa8bff 0%,
+          #2bd2ff 52%,
+          #2bff88 90%
+  );
+  -webkit-animation: splash-spinner 0.7s linear infinite;
+  animation: splash-spinner 0.7s linear infinite;
+}
+
+@-webkit-keyframes splash-spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes splash-spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}

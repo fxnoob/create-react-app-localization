@@ -1,7 +1,7 @@
 {
   "name": "untitled",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.2",
+  "homepage": "https://fxnoob.github.io/create-react-app-localization/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -9,6 +9,7 @@
     "arg": "^5.0.0",
     "chalk": "^4.1.1",
     "esm": "^3.2.25",
+    "gh-pages": "^3.2.0",
     "inquirer": "^8.1.0",
     "jsonfile": "^6.1.0",
     "node-google-translate-skidz": "^1.1.2",
@@ -24,7 +25,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "generate:locale": "node src/scripts/generate-locale",
-    "delete:locale": "node src/scripts/delete-locale"
+    "delete:locale": "node src/scripts/delete-locale",
+    "gh-page": "gh-pages -d build",
+    "deploy": "yarn build && yarn gh-page"
   },
   "eslintConfig": {
     "extends": [
